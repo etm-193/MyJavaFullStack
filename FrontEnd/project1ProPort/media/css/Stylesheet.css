@@ -1,7 +1,8 @@
 /* My css stylesheet */
 
 * {
-    background-color: rgb(44, 67, 97);
+    background-color: rgb(35, 37, 39);
+   
 }
 
 h1 {
@@ -13,6 +14,7 @@ h1 {
 #grid {
     display: grid;
     grid-template-columns: auto auto auto;
+    border: solid rgb(0, 0, 0) 1px;
 }
 
 .item {
@@ -24,6 +26,21 @@ h1 {
 .item1 {
     grid-column-start: 1;
     grid-column-end: 4;
+}
+
+
+img, .item2picture {
+    /* position: absolute; */
+    width: 35%;
+    height: auto;
+   
+}
+
+
+.container{
+    padding-left: 15%;
+    
+  
 }
 
 .item3 {
