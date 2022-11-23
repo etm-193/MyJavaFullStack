@@ -1,229 +1,197 @@
 /* My css stylesheet */
 
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&family=Unna&display=swap');
+
 * {
-    background-color: rgb(35, 37, 39);
-    font-family:  "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    letter-spacing: 0.05rem;
-    
-    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    letter-spacing: .05rem;
-    
-    box-sizing: border-box;
-    border: 1px solid black;
+  
+
+  font-family: 'Staatliches';
+  font-family: 'Unna', serif;
+  font-size: 30px;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
    
 }
 
-h1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
-    font-weight: 100;
+body{
+background: rgb(45, 53, 74);
+background: linear-gradient(169deg, rgba(47, 48, 49, 0.954) 0%, rgba(64, 79, 121, 0.9327146171693735) 54%, rgba(21, 76, 166, 1) 94%);
+font-family: 'Staatliches';
 }
 
-#body {
-    animation: alternate;
-}
+header{
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-
-[class*="col-"] {
-  padding: 15px;
-  border: 1px solid red;
-}
-
-.col-1 {
-  width: 8.33%;
-}
-
-.col-5 {
-  width: 12.49%;
-}
-
-.col-2 {
-  width: 16.66%;
-}
-
-.col-3 {
-  width: 25%;
-}
-
-.col-4 {
-  width: 33.33%;
-}
-
-.col-6 {
-  width: 50%;
-}
-
-.col-7 {
-  width: 58.33%;
-}
-
-.col-8 {
-  width: 66.66%;
-}
-
-.col-9 {
-  width: 75%;
-}
-
-.col-10 {
-  width: 83.33%;
-}
-
-.col-11 {
-  width: 91.66%;
-}
-
-.col-12 {
-  width: 100%;
-}
-
-/*  navigation and content styling */
-
-#navigation {
+  background-color: rgba(26, 36, 56, 0.699);
   display: flex;
-  flex-basis: 99%;
-}
-
-.logo {
-  height: 50px;
-  flex-basis: 17%;
-  margin-right: 65%;
-}
-
-.navcontainer {
-    padding: 0%;
-    margin: 0px 50px 0px 50px;
-    width: 200px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 3px 15%;
+  text-decoration: none;
+  margin: 25px;
+  border-radius: 12px;
+  font-family: 'Staatliches';
 
 }
 
-.navlinks ul {
+.nav .navcontainer{
+  display: inline-block;
+}
+
+.exp {
+  flex: auto;
+  background-color: rgba(0, 0, 0, 0.603);
+  border-color: solid black 1px;
+  width: 80%;
+  height: 53.5px;
+  justify-content: space-evenly;
+}
+
+div.exp .logo, div.exp .navlinks{
+  justify-content: center;
   display: inline-flex;
-  width: auto;
-}
-
-.navlinks li {
-    width: auto;
-}
-
-.navlinks ul li {
-  list-style: none;
-  padding-right: 5px;
-}
-
-.section1 {
-  display: flex;
-  width: 100%;
-  height: auto;
-}
-
-.image img {
-  padding-left: 50px;
-  flex-basis: 50%;
-  height: auto;
-}
-
-.content{
   
 }
 
-.section1 .content {
+
+.logo{
+  display: inline-block;
+  padding-right: 50%;
+}
+
+.logo img{
+  width: 57px;
+  margin: 0px;
+  border-radius: 100%;
+  cursor: pointer;
+  flex-shrink: auto;
+  flex-wrap: wrap;
   flex-basis: auto;
-  margin-left: 50px;
-  margin-right: 50px;
+  text-shadow: 5px white;
+}
+
+.navcontainer{
+  margin: 0px;
+  padding: 0%;
+
+}
+
+ul .navcontainer{
+  padding-left: 0%;
+}
+
+.home, .about, .journey{
+  list-style: none;
+  offset-position: top -10px;
+  margin: 0px 15px;
+  font-family: 'Staatliches';
+  font-weight: 500rem;
+  font-size: large;
+  margin-top: 0px;
+  color: rgb(243, 227, 227);
+  text-shadow: 4px 3px 10px rgb(68, 165, 221);
+  display: inline-block;
+  
+}
+
+.home :hover {
+list-style: none;
+  white-space: nowrap;
+  margin: 0px 20px;
+  
+  transition: all 1s;
+  
+  font-weight: 500rem;
+  font-size: large;
+  margin-top: 0px;
+  color: rgba(139, 197, 163, 0.767);
+  text-shadow: 4px 3px 10px rgb(40, 118, 121);
+ 
+}
+
+.about :hover {
+  list-style: none;
+  white-space: nowrap;
+  margin: 0px 20px;
+ 
+  transition: all 1s;
+ 
+  font-weight: 500rem;
+  font-size: large;
+  margin-top: 0px;
+  color: rgba(139, 197, 163, 0.767);
+  text-shadow: 4px 3px 10px rgb(40, 118, 121);
+ 
+}
+
+.journey :hover {
+list-style: none;
+  white-space: nowrap;
+  margin: 0px 20px;
+  padding: 0px 11%;
+  transition: all 1s;
+
+  font-weight: 500rem;
+  font-size: large;
+  margin-top: 0px;
+  color: rgba(139, 197, 163, 0.767);
+  text-shadow: 4px 3px 10px rgb(40, 118, 121);
+
 }
 
 
 
-@media (max-width: 1200px) and (min-width: 701px) {
-  .logo {
-    height: 50px;
-    flex-basis: 30%;
-    margin-right: 40%;
-  }
-
- .navcontainer {
-     padding: 0%;
-     margin: 0px 50px 0px 50px;
-     width: 200px;
-
- }
+.navcontainer li{
 
 
-  .image img {
-      padding-left: 50px;
-      flex-basis: 50%;
-      height: auto;
-  }
-
-  .section1 .content {
-    margin: 0px;
-    flex-basis: 75%;
-  }
-
+  font-family: 'Staatliches';
 }
-@media (max-width: 700px) and (min-width: 320px) {
-  header {
-    flex-wrap: wrap;
-  }
 
-  header .logo {
-    margin: 15px auto;
-    padding: 10px;
-  }
+.navcontainer li a :hover{
+  transition: all 0.5s ease .3s;
+  
+}
 
-  header nav {
-    margin: 5px auto;
-  }
+.navcontainer li a {
+  color: azure ;
+  text-decoration: none;
+  font-family: 'Staatliches';
+}
 
-  .section1 {
-    flex-wrap: wrap;
-  }
+.item .item4 ul li a{
+  background-color: black;
+  text-decoration: none;
+  text-shadow: 5px;
+  list-style: none;
+}
 
-  .section1 .content {
-    margin: 0px auto;
-    flex-basis: 85%;
-    margin-right: 0%;
-  }
-
-  .image {
-    margin: 15px auto;
-  }
+.item .item4 ul li  {
+  list-style: none;
+  display: inline-block;
 
 }
 
-@media (max-width: 700px) and (min-width:320px) {
-  header {
-    flex-wrap: wrap;
-  }
-
-  header .logo {
-    margin: 15px auto;
-    padding: 10px;
-  }
-
-  header nav {
-    margin: 5px auto;
-  }
-
-  .section1 {
-    flex-wrap: wrap;
-  }
-
-  .section1 .content {
-    margin: 0px auto;
-    flex-basis: 85%;
-    margin-right: 0%;
-  }
-
-  .image {
-    margin: 15px auto;
-  }
+.item .item4 span  {
+  padding-right: 10%;
+  padding-left: 10%;
+  font-family: 'Staatliches';
+  font-weight: 500;
 }
 
+.item .item4 ul li a.social{
+padding: 0px 10px;
+color: white;
+font-size: x-large;
+font-family: 'Staatliches';
+font-weight: 500;
+text-shadow: 4px 3px 10px rgb(40, 118, 121);
+}
+
+.connect li a .social :hover{
+  padding: 0px 10px;
+  color: rgba(139, 197, 163, 0.767);
+  text-shadow: 4px 3px 10px rgb(40, 118, 121);
+  font-size: x-large;
+  font-family: 'Staatliches';
+  font-weight: 500;
+}
