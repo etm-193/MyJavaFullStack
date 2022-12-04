@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&family=Staatliches&family=Unna&display=swap');
+
+body{
+    font-family: 'Roboto Mono', monospace, 'Staatliches', 'Unna', serif;
+}
+
+img.logo {
+    border-radius: 100%;
+}
+.myTitle{
+    padding-left: 10px;
+    padding-right: 500px;
+    font-weight: 600;
+    font-size: x-large;
+    color: aliceblue;
+    text-shadow: 1px 1px 2px rgba(25, 82, 33, 0.5), 0 0 1em rgb(82, 165, 221), 0 0 0.2em rgb(8, 52, 88);
+    transition-duration: 2s;
+    transition-property: margin-right, color;
+    
+
+}
+
+.nav-item{
+    
+padding-left: 10px;
+    font-weight: 400;
+    font-size: x-large;
+    color: aliceblue;
+    text-shadow: 1px 1px 2px burlywood;
+    transition-duration: 2s;
+    transition-property: margin-right, color;
+
+}
+
+
+/* .navbar-toggler-icon{
+    color: white;
+}
+.navbar-toggler-icon :hover{
+    color: gold;
+} */
+
+.myImagePro{
+    padding: 35px;
+}
+

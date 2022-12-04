@@ -35,7 +35,7 @@ header{
 }
 
 .nav .navcontainer{
-  display: inline-block;
+  display: flexbox;
 }
 
 .exp {
@@ -48,9 +48,8 @@ header{
 }
 
 div.exp .logo, div.exp .navlinks{
-  justify-content: center;
-  display: inline-flex;
-  
+  justify-content: space-evenly;
+  display: inline-block;
 }
 
 
@@ -77,6 +76,7 @@ div.exp .logo, div.exp .navlinks{
 }
 
 ul .navcontainer{
+
   padding-left: 0%;
 }
 
@@ -92,6 +92,24 @@ ul .navcontainer{
   text-shadow: 4px 3px 10px rgb(68, 165, 221);
   display: inline-block;
   
+}
+
+@media(max-width: 1200) and (min-width: 500px) {
+  .home,.about,.journey {
+      list-style: none;
+      offset-position: top -10px;
+      margin: 0px 15px;
+      font-family: 'Staatliches';
+      font-weight: 500rem;
+      font-size: medium;
+      margin-top: 0px;
+      color: rgb(243, 227, 227);
+      text-shadow: 4px 3px 10px rgb(68, 165, 221);
+      display: inline-block;
+  }
+
+
+
 }
 
 .home :hover {
@@ -171,27 +189,32 @@ list-style: none;
 
 }
 
+footer{
+  background-color: black;
+  border: solid 1px black;
+}
+
 .item .item4 span  {
+  color: antiquewhite;
   padding-right: 10%;
   padding-left: 10%;
   font-family: 'Staatliches';
   font-weight: 500;
+  text-shadow: 4px 3px 10px rgb(68, 165, 221);
 }
 
-.item .item4 ul li a.social{
-padding: 0px 10px;
-color: white;
-font-size: x-large;
-font-family: 'Staatliches';
-font-weight: 500;
-text-shadow: 4px 3px 10px rgb(40, 118, 121);
-}
-
-.connect li a .social :hover{
-  padding: 0px 10px;
-  color: rgba(139, 197, 163, 0.767);
-  text-shadow: 4px 3px 10px rgb(40, 118, 121);
-  font-size: x-large;
+ a.social{
+list-style: none;
+  offset-position: top -10px;
+  margin: 0px 15px;
   font-family: 'Staatliches';
-  font-weight: 500;
+  font-weight: 500rem;
+  font-size: 23.5px;
+  margin-top: 0px;
+  color: rgb(243, 227, 227);
+  text-shadow: 4px 3px 10px rgb(68, 165, 221);
+  display: inline-block;
+  transition: all 1s;
 }
+
+ 
