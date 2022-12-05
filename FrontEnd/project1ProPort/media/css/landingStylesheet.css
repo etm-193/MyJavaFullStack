@@ -1,15 +1,34 @@
+/* general styling */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&family=Staatliches&family=Unna&display=swap');
 
 body{
     font-family: 'Roboto Mono', monospace, 'Staatliches', 'Unna', serif;
+   
+    background: linear-gradient(169deg, rgba(45, 53, 74, 0.9535962877030162) 0%, rgba(38, 70, 83, 0.7903536414565826) 44%, rgba(9, 194, 105, 1) 94%);
 }
+
+
+/* nav styling */
+#navContainer{
+    background-color: rgb(8, 52, 88);
+    max-width: 95%;
+    
+    padding: 0%;
+}
+
 
 img.logo {
     border-radius: 100%;
 }
+
+.container-fluid.navbar-brand{
+    max-width: 40%;
+    padding-right: 25%;
+}
 .myTitle{
     padding-left: 10px;
-    padding-right: 500px;
+    
     font-weight: 600;
     font-size: x-large;
     color: aliceblue;
@@ -23,24 +42,55 @@ img.logo {
 .nav-item{
     
 padding-left: 10px;
-    font-weight: 400;
+    padding-right: 50px;
+    font-weight: 600;
     font-size: x-large;
-    color: aliceblue;
-    text-shadow: 1px 1px 2px burlywood;
+    color: rgb(83, 134, 179);
+    text-shadow: 1px 1px 2px rgba(40, 155, 55, 0.993), 0 0 1em rgba(172,
+        132,
+        58,
+        0.74), 0 0 0.2em rgb(22, 132, 221);
     transition-duration: 2s;
     transition-property: margin-right, color;
+    content: auto;
+}
+
+/* content styling - main*/
+
+#myProImage{
+    padding: 50px;
+    border-radius: 8%;
+}
+
+h1, p{
+    background-color: rgba(172, 132, 58, 0.74);
+}
+
+#sample1.container-fluid, #sample2.container-fluid{
+    max-width: 40%;
+    border-radius: 8%;
+    background-color: rgb(0, 0, 0);
+    padding-right: 10px;
+    justify-content: center;
+    height: 75px;
 
 }
 
-
-/* .navbar-toggler-icon{
+#sample1.container-fluid a, #sample2.container-fluid a{
     color: white;
 }
-.navbar-toggler-icon :hover{
-    color: gold;
-} */
 
-.myImagePro{
-    padding: 35px;
+p{
+    justify-content: center;
+    font-weight: 300;
+    font-size: large;
+    width: fit-content;
+}
+
+/* content styling - footer*/
+
+
+#footerLinks{
+    display: inline-block;
 }
 
