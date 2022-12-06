@@ -1,0 +1,220 @@
+/* My css stylesheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&family=Unna&display=swap');
+
+* {
+  
+
+  font-family: 'Staatliches';
+  font-family: 'Unna', serif;
+  font-size: 30px;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+   
+}
+
+body{
+background: rgb(45, 53, 74);
+background: linear-gradient(169deg, rgba(47, 48, 49, 0.954) 0%, rgba(64, 79, 121, 0.9327146171693735) 54%, rgba(21, 76, 166, 1) 94%);
+font-family: 'Staatliches';
+}
+
+header{
+
+  background-color: rgba(26, 36, 56, 0.699);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 3px 15%;
+  text-decoration: none;
+  margin: 25px;
+  border-radius: 12px;
+  font-family: 'Staatliches';
+
+}
+
+.nav .navcontainer{
+  display: flexbox;
+}
+
+.exp {
+  flex: auto;
+  background-color: rgba(0, 0, 0, 0.603);
+  border-color: solid black 1px;
+  width: 80%;
+  height: 53.5px;
+  justify-content: space-evenly;
+}
+
+div.exp .logo, div.exp .navlinks{
+  justify-content: space-evenly;
+  display: inline-block;
+}
+
+
+.logo{
+  display: inline-block;
+  padding-right: 50%;
+}
+
+.logo img{
+  width: 57px;
+  margin: 0px;
+  border-radius: 100%;
+  cursor: pointer;
+  flex-shrink: auto;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  text-shadow: 5px white;
+}
+
+.navcontainer{
+  margin: 0px;
+  padding: 0%;
+
+}
+
+ul .navcontainer{
+
+  padding-left: 0%;
+}
+
+.home, .about, .journey{
+  list-style: none;
+  offset-position: top -10px;
+  margin: 0px 15px;
+  font-family: 'Staatliches';
+  font-weight: 500rem;
+  font-size: large;
+  margin-top: 0px;
+  color: rgb(243, 227, 227);
+  text-shadow: 4px 3px 10px rgb(68, 165, 221);
+  display: inline-block;
+  
+}
+
+@media(max-width: 1200) and (min-width: 500px) {
+  .home,.about,.journey {
+      list-style: none;
+      offset-position: top -10px;
+      margin: 0px 15px;
+      font-family: 'Staatliches';
+      font-weight: 500rem;
+      font-size: medium;
+      margin-top: 0px;
+      color: rgb(243, 227, 227);
+      text-shadow: 4px 3px 10px rgb(68, 165, 221);
+      display: inline-block;
+  }
+
+
+
+}
+
+.home :hover {
+list-style: none;
+  white-space: nowrap;
+  margin: 0px 20px;
+  
+  transition: all 1s;
+  
+  font-weight: 500rem;
+  font-size: large;
+  margin-top: 0px;
+  color: rgba(139, 197, 163, 0.767);
+  text-shadow: 4px 3px 10px rgb(40, 118, 121);
+ 
+}
+
+.about :hover {
+  list-style: none;
+  white-space: nowrap;
+  margin: 0px 20px;
+ 
+  transition: all 1s;
+ 
+  font-weight: 500rem;
+  font-size: large;
+  margin-top: 0px;
+  color: rgba(139, 197, 163, 0.767);
+  text-shadow: 4px 3px 10px rgb(40, 118, 121);
+ 
+}
+
+.journey :hover {
+list-style: none;
+  white-space: nowrap;
+  margin: 0px 20px;
+  padding: 0px 11%;
+  transition: all 1s;
+
+  font-weight: 500rem;
+  font-size: large;
+  margin-top: 0px;
+  color: rgba(139, 197, 163, 0.767);
+  text-shadow: 4px 3px 10px rgb(40, 118, 121);
+
+}
+
+
+
+.navcontainer li{
+
+
+  font-family: 'Staatliches';
+}
+
+.navcontainer li a :hover{
+  transition: all 0.5s ease .3s;
+  
+}
+
+.navcontainer li a {
+  color: azure ;
+  text-decoration: none;
+  font-family: 'Staatliches';
+}
+
+.item .item4 ul li a{
+  background-color: black;
+  text-decoration: none;
+  text-shadow: 5px;
+  list-style: none;
+}
+
+.item .item4 ul li  {
+  list-style: none;
+  display: inline-block;
+
+}
+
+footer{
+  background-color: black;
+  border: solid 1px black;
+}
+
+.item .item4 span  {
+  color: antiquewhite;
+  padding-right: 10%;
+  padding-left: 10%;
+  font-family: 'Staatliches';
+  font-weight: 500;
+  text-shadow: 4px 3px 10px rgb(68, 165, 221);
+}
+
+ a.social{
+list-style: none;
+  offset-position: top -10px;
+  margin: 0px 15px;
+  font-family: 'Staatliches';
+  font-weight: 500rem;
+  font-size: 23.5px;
+  margin-top: 0px;
+  color: rgb(243, 227, 227);
+  text-shadow: 4px 3px 10px rgb(68, 165, 221);
+  display: inline-block;
+  transition: all 1s;
+}
+
+ 
