@@ -21,7 +21,7 @@
 
     <title>Contact</title>
 </head>
-<body>
+<body class="col-12">
     
     <header>
         <!-- nav container -->
@@ -58,35 +58,47 @@
         </nav>
     </header>
 
-    <main>
+    <main class="col">
         <h1>Get in Contact:</h1>
 
         <p> The following links will take you to my resume and my email if you wish to get in contact, alternatively feel free to connect with me through the social media links at the bottom!</p>
-        <a href="mailto: ejtm.193@gmail.com">Send a message</a>
+        
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
         <a href="/FrontEnd/project1ProPort/media/Ernest Torres- RESUME-V1 Aspiring IT (1).pdf">Resume</a>
     </main>
 
-    <footer class="row">
+    <footer>
     
-        <section class="row">
+        <span>
+            <h4>Let's Connect:</h4>
+        </span>
+
+        <section class+>
     
-            <span>
-                <h4>Let's Connect:</h4>
-            </span>
-            <section id="footerLinks" class="row">
-                <div class="fa fa-twitter"><a href="https://twitter.com/Ernest_jTorres">Twitter</a></div>
-    
-    
-                <div class="col-1">
-    
+               <div class="col-1">   
+                   <div class="fa fa-twitter"><a href="https://twitter.com/Ernest_jTorres">Twitter</a></div>
+                </div>
+
+                <div class="col-2">
                     <a class="fa fa-instagram" href="https://www.instagram.com/etorres.professional/">Instagram</a></i>
                 </div>
-                <i id="linked"><a class="fa fa-linkedin"
-                        href="https://www.linkedin.com/in/ernesto-j-torres-martinez">LinkedIn</a></i>
+
+                <div class="col-3">     
+                    <em id="linked"><a class="fa fa-linkedin" href="https://www.linkedin.com/in/ernesto-j-torres-martinez">LinkedIn</a></i>
+                </div>
+                <div class="col-4">
+                    <i class='fa fa-github'><a href="https://github.com/etm-193">Git-Hub</a></i>
+                </div>   
     
-                <i class='fa fa-github'><a href="https://github.com/etm-193">Git-Hub</a></i>
-    
-            </section>
+            
     
         </section>
     
